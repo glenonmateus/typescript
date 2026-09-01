@@ -84,3 +84,14 @@
 // const concatenacao = concatena("a", "b", "c");
 //
 // console.log(resultado, concatenacao);
+
+// tuple
+
+// const dados1: [number, string] = [1, "Glenon"];
+// const dados2: [number, string, string?] = [1, "Glenon"];
+// const dados3: [number, string, ...string[]] = [1, "Glenon"];
+//
+// dados1[0] = 10;
+// dados2[1] = "Mateus";
+//
+// console.log(dados1, dados2, dados3);
