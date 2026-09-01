@@ -37,19 +37,36 @@
 // console.log(resultado1, resultado2);
 
 //void (sem retorno)
-function semRetorno(...args: string[]): void {
-	console.log(args.join(" "));
-}
+// function semRetorno(...args: string[]): void {
+// 	console.log(args.join(" "));
+// }
+//
+// semRetorno("Glenon", "Mateus");
+//
+// const pessoa = {
+// 	nome: "Glenon",
+// 	sobrenome: "Mateus",
+//
+// 	exibirNome(): void {
+// 		console.log(`${this.nome} ${this.sobrenome}`);
+// 	},
+// };
+//
+// pessoa.exibirNome();
 
-semRetorno("Glenon", "Mateus");
-
-const pessoa = {
-	nome: "Glenon",
-	sobrenome: "Mateus",
-
-	exibirNome(): void {
-		console.log(`${this.nome} ${this.sobrenome}`);
-	},
-};
-
-pessoa.exibirNome();
+//objetos
+// const objetoA: {
+// 	chaveA: string;
+// 	chaveB: string;
+// 	chaveC?: string;
+// 	[key: string]: unknown;
+// } = {
+// 	chaveA: "Valor A",
+// 	chaveB: "Valor B",
+// };
+//
+// objetoA.chaveB = "Outro valor";
+// objetoA.chaveC = "Valor C";
+// objetoA.chaveD = "Valor D";
+//
+// console.log(objetoA);
