@@ -70,3 +70,17 @@
 // objetoA.chaveD = "Valor D";
 //
 // console.log(objetoA);
+
+//Array<T> - T[]
+// export function multiplica(...args: Array<number>): number {
+// 	return args.reduce((ac, valor) => ac * valor, 1);
+// }
+//
+// export function concatena(...args: Array<string>): string {
+// 	return args.reduce((ac, valor) => ac + valor, "");
+// }
+//
+// const resultado = multiplica(1, 2, 3);
+// const concatenacao = concatena("a", "b", "c");
+//
+// console.log(resultado, concatenacao);
