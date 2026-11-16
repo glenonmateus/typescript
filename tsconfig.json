@@ -46,7 +46,8 @@
 		"rewriteRelativeImportExtensions": true,
 
 		"allowJs": true,
-		"noImplicitAny": true
+		"noImplicitAny": true,
+		"erasableSyntaxOnly": true
 		// "noEmit": true
 		// "emitDeclarationOnly": true
 	},
