@@ -28,7 +28,13 @@ export class Colaborador {
 	}
 }
 
-const empresa1 = new Empresa("Udemy", "9999999");
+export class Udemy extends Empresa {
+	constructor() {
+		super("Udemy", "11.111.111/0001-11");
+	}
+}
+
+const empresa1 = new Udemy();
 const colaborador1 = new Colaborador("glenon", "mateus");
 const colaborador2 = new Colaborador("glenon", "mateus");
 
