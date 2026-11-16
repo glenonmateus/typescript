@@ -16,6 +16,10 @@ export class Empresa {
 	public getColaboradores(): Array<Colaborador> {
 		return this.colaboradores;
 	}
+
+	public getCnpj(): string {
+		return this.cnpj;
+	}
 }
 
 export class Colaborador {
