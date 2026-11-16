@@ -7,7 +7,7 @@ function mapStrings(
 	const newArray: Array<string> = [];
 
 	for (let index = 0; index < array.length; index++) {
-		const item: string = array[index];
+		const item: string = array[index] as string;
 		newArray.push(callbackfn(item));
 	}
 
