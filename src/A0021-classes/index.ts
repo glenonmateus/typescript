@@ -1,7 +1,7 @@
 export class Empresa {
 	public readonly nome: string;
-	private readonly colaboradores: Array<Colaborador>;
-	protected readonly cnpj: string;
+	protected readonly colaboradores: Array<Colaborador>;
+	private readonly cnpj: string;
 
 	constructor(nome: string, cnpj: string) {
 		this.nome = nome;
@@ -32,14 +32,22 @@ export class Udemy extends Empresa {
 	constructor() {
 		super("Udemy", "11.111.111/0001-11");
 	}
+
+	public removeUltimoColaborador(): Colaborador | undefined {
+		const colaborador = this.colaboradores.pop();
+		if (colaborador) return colaborador;
+	}
 }
 
 const empresa1 = new Udemy();
 const colaborador1 = new Colaborador("glenon", "mateus");
-const colaborador2 = new Colaborador("glenon", "mateus");
 
 empresa1.adicionaColaborador(colaborador1);
-empresa1.adicionaColaborador(colaborador2);
+empresa1.adicionaColaborador(colaborador1);
+empresa1.adicionaColaborador(colaborador1);
+empresa1.adicionaColaborador(colaborador1);
 
-console.log(empresa1);
+const ultimo = empresa1.removeUltimoColaborador();
+
 console.log(empresa1.getColaboradores());
+console.log(ultimo);
