@@ -34,7 +34,6 @@ const colaborador2 = new Colaborador("glenon", "mateus");
 
 empresa1.adicionaColaborador(colaborador1);
 empresa1.adicionaColaborador(colaborador2);
-empresa1.adicionaColaborador({ nome: "glenon", sobrenome: "mateus" });
 
 console.log(empresa1);
 console.log(empresa1.getColaboradores());
