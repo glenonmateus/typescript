@@ -95,3 +95,22 @@
 // dados2[1] = "Mateus";
 //
 // console.log(dados1, dados2, dados3);
+
+// function addOrConcat(a: number | string, b: number | string) {
+// 	if (typeof a === "number" && typeof b === "number") return a + b;
+// 	return `${a}${b}`;
+// }
+
+// intersection types
+// type TemNome = { nome: string };
+// type TemSobrenome = { sobrenome: string };
+// type TemIdade = { idade: number };
+// type Pessoa = TemNome & TemSobrenome & TemIdade; // AND
+//
+// const pessoa: Pessoa = {
+// 	nome: "glenon",
+// 	sobrenome: "mateus",
+// 	idade: 40,
+// };
+//
+// console.log(pessoa);
